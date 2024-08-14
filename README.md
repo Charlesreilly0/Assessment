@@ -18,7 +18,7 @@ Important Note: For easier copy and pasting of commands. Please use the github r
 
 
    ```bash
-   cd reply-technical-assessment/assessment/
+   cd Reply-Technical-Assignment/streaming/
    ```
 4. Build the application:
 
