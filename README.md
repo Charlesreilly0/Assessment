@@ -1,5 +1,5 @@
 
-# My Reply Assessment - Spring Boot Application
+# My Technical Assessment - Spring Boot Application
 
 ### Author - Charles Reilly
 
