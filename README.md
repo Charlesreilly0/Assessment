@@ -64,7 +64,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
      "password": "Password123",
      "emailAddress": "charles.reilly@example.com",
      "dob": "2000-01-01",
-     "creditCardNumber": "1234567812345678"
+     "cardNumber": "1234567812345678"
    }'
    ```
 
@@ -118,7 +118,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
    curl -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
-     "creditCardNumber": "1234567812345678",
+     "cardNumber": "1234567812345678",
      "amount": "100"
    }'
    ```
@@ -129,7 +129,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
    curl -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
-     "creditCardNumber": "1234abcd5678efgh",
+     "cardNumber": "1234abcd5678efgh",
      "amount": "100"
    }'
    ```
@@ -140,7 +140,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
    curl -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
-     "creditCardNumber": "1234567812345678",
+     "cardNumber": "1234567812345678",
      "amount": "-10"
    }'
    ```
@@ -151,7 +151,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
    curl -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
-     "creditCardNumber": "8765432187654321",
+     "cardNumber": "8765432187654321",
      "amount": "100"
    }'
    ```
