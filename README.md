@@ -44,7 +44,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 1. POST /users - Create a new user
 
    ```bash
-   curl -X POST http://localhost:8080/users \
+   curl -i -X POST http://localhost:8080/users \
    -H "Content-Type: application/json" \
    -d '{
      "username": "charlesReilly",
@@ -57,7 +57,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 1. POST /users - Create a new user (With Credit Card)
 
    ```bash
-   curl -X POST http://localhost:8080/users \
+   curl -i -X POST http://localhost:8080/users \
    -H "Content-Type: application/json" \
    -d '{
      "username": "charlesReilly2",
@@ -71,7 +71,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 2. POST /users - Create a new user (Invalid, Underage)
 
    ```bash
-   curl -X POST http://localhost:8080/users \
+   curl -i -X POST http://localhost:8080/users \
    -H "Content-Type: application/json" \
    -d '{
      "username": "youngUser",
@@ -84,7 +84,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 3. POST /users - Create a new user (User Already Exists)
 
    ```bash
-   curl -X POST http://localhost:8080/users \
+   curl -i -X POST http://localhost:8080/users \
    -H "Content-Type: application/json" \
    -d '{
      "username": "charlesReilly",
@@ -97,25 +97,25 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 4. GET /users - Retrieve all users
 
    ```bash
-   curl -X GET http://localhost:8080/users
+   curl -i -X GET http://localhost:8080/users
    ```
 
 5. GET /users?CreditCard=Yes - Retrieve users with credit card filter (Yes)
 
    ```bash
-   curl -X GET "http://localhost:8080/users?CreditCard=Yes"
+   curl -i -X GET "http://localhost:8080/users?CreditCard=Yes"
    ```
 6. GET /users?CreditCard=No - Retrieve users with credit card filter (No)
 
    ```bash
-   curl -X GET "http://localhost:8080/users?CreditCard=No"
+   curl -i -X GET "http://localhost:8080/users?CreditCard=No"
    ```
 ### Payment Processing
 
 1. POST /payments - Process a payment
 
    ```bash
-   curl -X POST http://localhost:8080/payments \
+   curl -i -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
      "cardNumber": "1234567812345678",
@@ -126,7 +126,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 2. POST /payments - Process a payment (Invalid Credit Card Number)
 
    ```bash
-   curl -X POST http://localhost:8080/payments \
+   curl -i -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
      "cardNumber": "1234abcd5678efgh",
@@ -137,7 +137,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 3. POST /payments - Process a payment (Invalid Amount)
 
    ```bash
-   curl -X POST http://localhost:8080/payments \
+   curl -i -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
      "cardNumber": "1234567812345678",
@@ -148,7 +148,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
 4. POST /payments - Process a payment (Credit Card Not Registered)
 
    ```bash
-   curl -X POST http://localhost:8080/payments \
+   curl -i -X POST http://localhost:8080/payments \
    -H "Content-Type: application/json" \
    -d '{
      "cardNumber": "8765432187654321",
