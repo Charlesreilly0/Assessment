@@ -60,7 +60,7 @@ Note: Edge cases can be tested by altering these templates. For example, change 
    curl -X POST http://localhost:8080/users \
    -H "Content-Type: application/json" \
    -d '{
-     "username": "charlesReilly",
+     "username": "charlesReilly2",
      "password": "Password123",
      "emailAddress": "charles.reilly@example.com",
      "dob": "2000-01-01",
